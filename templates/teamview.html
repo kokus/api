@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %} {{ pageTitle }} {% endblock %}
+
+{% block content %}
+
+<h1>{{ pageTitle }}</h1>
+
+	{% for team in teamlist %}
+	<div class="team">
+		{% include 'teamdetail.html' %}
+
+	</div>
+	{% endfor %}
+
+{% endblock content %}

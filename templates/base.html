@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	{% block head %}
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<meta content="" name="description" />
+   		<meta content="" name="author" />
+		<!-- Stylesheets -->
+		<link href="css/plugins/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   		<link href="css/plugins/bootstrap/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+   		<link href="css/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+   		<link href="css/style-metro.css" rel="stylesheet" type="text/css"/>
+   		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+   		<link href="css/style-responsive.css" rel="stylesheet" type="text/css"/>
+		<title>{% block title %}{% endblock %}</title>
+	{% endblock %}
+</head>
+<body class="page-header-fixed page-sidebar-fixed page-boxed">
+   <!-- BEGIN HEADER -->
+   <div class="header navbar navbar-inverse navbar-fixed-top">
+      <!-- BEGIN TOP NAVIGATION BAR -->
+      <div class="navbar-inner">
+         <div class="container">
+            <!-- HEADER CONTENT GOES HERE -->
+         </div> 
+      </div>
+      <!-- END TOP NAVIGATION BAR -->
+   </div>
+   <!-- END HEADER -->
+   <!-- BEGIN BOXED CONTAINER -->
+   <div class="container"> 
+      <!-- BEGIN CONTAINER -->  
+      <div class="page-container row-fluid">
+         <!-- REMOVED SIDEBAR HERE -->
+         <!-- BEGIN PAGE -->
+         <div class="page-content">
+            <!-- PAGE CONTENT GOES HERE -->
+            {% block content %}{% endblock %}
+         </div>
+         <!-- END PAGE -->          
+      </div>
+      <!-- END CONTAINER -->   
+   </div>
+   <!-- END BOXED CONTAINER -->
+   <!-- BEGIN FOOTER -->
+   <div class="footer">
+      <div class="container">
+      <!-- PAGE FOOTER GOES HERE -->
+      {% block footer %}
+    	<p>Copyright &copy;2013 Golspace. All Rights Reserved.</p>
+      {% endblock %}
+      </div>
+   </div>  
+   <!-- END FOOTER -->
+</body>
+
+
+
+</html>
+
+
